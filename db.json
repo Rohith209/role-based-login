@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "email": "rajasekar@developer.com",
+      "username": "Rajasekar",
+      "role": "manager",
+      "password": "123",
+      "gender": "male",
+      "id": "bced"
+    },
+    {
+      "email": "pandi@manager.com",
+      "username": "Pandi",
+      "role": "manager",
+      "password": "123",
+      "gender": "male",
+      "id": "2f2c"
+    },
+    {
+      "id": "9523",
+      "username": "Janaki",
+      "email": "janaki@tester.com",
+      "password": "123",
+      "gender": "female",
+      "role": "tester"
+    },
+    {
+      "id": "4f43",
+      "username": "Shrijan",
+      "email": "shrijan@developer.com",
+      "password": "123",
+      "gender": "male",
+      "role": "developer"
+    },
+    {
+      "id": "057b",
+      "username": "Deepan",
+      "email": "deepan@tester.com",
+      "password": "123",
+      "gender": "male",
+      "role": "tester"
+    },
+    {
+      "id": "a346",
+      "username": "Vinoth",
+      "email": "vinoth@tester.com",
+      "password": "123",
+      "gender": "male",
+      "role": "tester"
+    },
+    {
+      "id": "27a2",
+      "username": "Manoj",
+      "email": "manoj@developer.com",
+      "password": "123",
+      "gender": "male",
+      "role": "developer"
+    },
+    {
+      "id": "f6a3",
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "password": "123",
+      "gender": "male",
+      "role": "admin"
+    },
+    {
+      "id": "3676",
+      "username": "Rohith Sai",
+      "email": "rs@gmail.com",
+      "password": "123",
+      "gender": "male",
+      "role": "admin"
+    },
+    {
+      "id": "86c3",
+      "username": "Sandhya",
+      "email": "sandhya@developer.com",
+      "password": "123",
+      "gender": "female",
+      "role": "developer"
+    }
+  ]
+}

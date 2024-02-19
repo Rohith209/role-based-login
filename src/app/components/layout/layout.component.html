@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" *ngIf="isHeaderShown">
+    <span>User Management</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="example-icon" color="basic" 
+    (click)="logoutUser()">
+    <mat-icon>logout</mat-icon> 
+      <strong>
+        Logout
+      </strong>
+    </button>
+  </mat-toolbar>
+  <main>
+    <router-outlet></router-outlet>
+  </main>

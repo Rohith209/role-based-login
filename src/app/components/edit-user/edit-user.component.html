@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>Update User</h2>
+<mat-dialog-content>
+  <mat-card class="example-card">
+        
+        <form [formGroup]="editUser" (ngSubmit)="onEditSubmit()">
+          <mat-card-content>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput type="text" formControlName="username"/>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email"/>
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password" />
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <label id="gender">Gender:</label>
+              <br />
+              <mat-radio-group
+                formControlName="gender"
+                aria-labelledby="gender"
+              >
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button value="others">Others</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="role">
+                  @for (role of roles; track role) {
+                  <mat-option [value]="role.value">{{
+                    role.viewValue
+                  }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">Update</button>
+          </mat-card-actions>
+        </form>
+      </mat-card>
+</mat-dialog-content>

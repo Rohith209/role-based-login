@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <mat-card class="example-card">
+        <mat-card-header class="w-100">
+          <mat-card-title class="mb-2 text-center w-100">
+            <mat-icon aria-hidden="false">how_to_reg</mat-icon>
+            <br />
+            Register
+          </mat-card-title>
+        </mat-card-header>
+        <form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+          <mat-card-content>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput type="text" formControlName="username" />
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email" />
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password" />
+              </mat-form-field>
+            </div>
+            <div class="form-group">
+              <label id="gender">Gender:</label>
+              <br />
+              <mat-radio-group
+                formControlName="gender"
+                aria-labelledby="gender"
+              >
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button value="others">Others</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div class="form-group">
+              <mat-form-field>
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="role">
+                  @for (role of roles; track role) {
+                  <mat-option [value]="role.value">{{
+                    role.viewValue
+                  }}</mat-option>
+                  }
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">Register</button>
+            <p>
+              Already have an account? Click
+              <a routerLink="/login">here</a>
+              to Login.
+            </p>
+          </mat-card-actions>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
