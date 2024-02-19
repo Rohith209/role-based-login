@@ -1,0 +1,26 @@
+.container {
+  height: 100%;
+
+  .row {
+    .col-12 {
+      .wrapper {
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-weight: bold;
+          font-size: 42px;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 18px;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

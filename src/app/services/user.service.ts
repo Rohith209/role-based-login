@@ -6,7 +6,7 @@ import { Users } from '../components/home/home.component';
   providedIn: 'root',
 })
 export class UserService {
-  private apiURL = 'http://localhost:3000/users';
+  private apiURL = `https://my-json-server.typicode.com/rohith209/role-based-login-backend/users`;
   constructor(private http: HttpClient) {}
 
   registerUser(registerData: any) {
